@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+        aside{
+            padding: 2rem;
+            padding-right: 1.5;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 2px solid var(--clr-gray);
+       }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .boton-menu{
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            display: flex;
+            gap: 1rem;
+            font-weight: 700;
+            padding: 0.9rem;
+            font-size: 0.9rem;
+        }
+
+        .footer{
+            padding: 5rem 0rem;
+        }
+        .imagen-logo {
+            padding-top: 1.9rem;
+            padding-left: 1.5rem;
+            width: 170px; /* O el tamaño que desees */
+        }
+        main{
+            margin-left: 0;
+            padding:  1rem 0;           
+        }
+        .boton-categoria-opciones {
+
+            text-align: right;
+            border-bottom: 2px solid var(--clr-gray);     
+        }
+        .separador {
+            display: inline-block;
+        }
+        .secciones {
+            display: flex;
+            margin: 0px;
+            padding-left: 0;
+            align-items: center;
+            flex-direction: row;
+        }
+        .boton-Nuevo{
+            border: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.5rem 4rem;
+        }
+
+        .contenedor-crud-insumo{
+    
+            margin: 8rem 0rem 8rem 0rem;
+            width: 1000px;
+            padding: 8rem;
+            padding-top: 3rem;  
+        }
+
+    
+    </style>
+
+</head>
+
+
+<body>
+    
+    <div class="wrapper">
+
+        <aside>
+
+            <header>
+                <img class="imagen-logo" src="fogon.png">
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" class="boton-menu boton-categoria"> VENTAS</a></li>
+                    <li><a href="#" class="boton-menu boton-categoria"> PRODUCTOS</a></li>
+                    <li><a href="#" class="boton-menu boton-categoria"> INSUMOS</a></li>
+                    <li><a href="#" class="boton-menu boton-categoria"> REPORTES</a></li>
+                    
+                </ul>
+            </nav>
+
+            <footer>
+                <ul class="menu">
+                    <li><a href="#" class="boton-menu footer"> CUENTA</a></li>
+                </ul>
+                
+            </footer>  
+
+        </aside>
+
+        <main>
+
+            <div class="boton-categoria-opciones">
+
+                <ul class="secciones">
+                    <li><a href="#" class="boton-Nuevo reporte">Reporte</a></li>
+                    <li><a href="#" class="boton-Nuevo otros">Otro</a></li>
+
+                   
+                </ul>
+
+
+            </div>
+ 
+
+            <div class="contenedor-crud-insumo">
+
+                
+                <div class="contenedor-tabla">
+
+                   <img src="dash.avif" alt="" width="700" height="500">
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    
+</body>
+
+
+
+</html>
