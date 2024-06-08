@@ -1,0 +1,67 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #eee ;
+    overflow: hidden;
+    
+}
+
+.container_header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.logo_menu{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+
+
+figure{
+    width: 75%;
+}
+
+.logo_figure{
+    width: 100%;
+}
+
+.nav-link span{
+    font-size: 18px;
+}
+
+.content-main{
+    margin-left: 210px;
+    font-size: 22px;
+    
+}
+.separacion{
+    
+    border-bottom: 2px solid #eee;
+}
+
+
+.nav .nav-item .efecto{
+    color: #000;
+}
+
+
+.nav .nav-item .efecto:hover{
+    color: #646464;
+}
