@@ -19,9 +19,9 @@ header.innerHTML = `
 </div>
 
 <div class="btn-login">
-    <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover"><i class="bi bi-person-fill "></i>
+    <a  href="./login.html" type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"  data-bs-content="Right popover"><i class="bi bi-person-fill "></i>
         <span>cuenta</span> 
-    </button>
+    </a>
 </div>
 </div> 
 `;
@@ -47,31 +47,31 @@ const datos = [
       "title": "Mesa 1",
       "inicia": "2024-06-08T09:00:00",
       "numero_de_persona": 4,
-      "precio": 50
+      "precio": 50.30
     },
     {
       "title": "Mesa 2",
       "inicia": "2024-06-09T10:30:00",
       "numero_de_persona": 6,
-      "precio": 60
+      "precio": 60.50
     },
     {
       "title": "Mesa 3",
       "inicia": "2024-06-10T14:00:00",
       "numero_de_persona": 2,
-      "precio": 40
+      "precio": 40.40
     },
     {
       "title": "Mesa 4",
       "inicia": "2024-06-11T16:45:00",
       "numero_de_persona": 3,
-      "precio": 35
+      "precio": 35.23
     },
     {
       "title": "Mesa 5",
       "inicia": "2024-06-12T08:00:00",
       "numero_de_persona": 8,
-      "precio": 75
+      "precio": 75.12
     }
 ];
 
@@ -90,3 +90,15 @@ datos.forEach((mesa) => {
         </div>
     `;
 });
+
+cardMesa.innerHTML += `
+    <div class="col-4 mb-4">
+        <div class="card border-warning" style="width: 18rem; ">
+            <div class="card-body text-center">
+                <a class="btn  btn-lg" href="./generarMesa.html">
+                    <img src="../img/add.svg" alt="Agregar nueva mmesa"> 
+                </a> 
+            </div>
+        </div>
+    </div>
+`;
