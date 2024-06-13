@@ -28,9 +28,17 @@
                     
                 </ul>
             </nav>
-            <footer>
-                <li><button class="boton-menu footer"><i class="bi bi-person-check-fill"></i> CUENTA<i class="bi bi-chevron-left"></i></button></li>
-            </footer>  
+            <footer class="footer bg-gray-800 p-1.8 text-white" >
+                <ul class="list-none">
+                    <li>
+                        <button class="boton-menu flex items-center space-x-2">
+                            <i class="bi bi-person-check-fill"></i>
+                            <a href="login.html" class="text-dark">CUENTA</a>
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                    </li>
+                </ul>
+            </footer> 
 
         </aside>
 
@@ -39,10 +47,10 @@
             <div class="boton-categoria-insumo">
 
                 <ul class="secciones">
-                    <li><a class="boton-Nuevo insumo" href="./insumo.html">Insumos</a></li>
-                    <li><a class="boton-Nuevo categoria"  href="./cateInsumo.html" >Categoria</a></li>
+                    <li><a class="boton-Nuevo insumo" href="insumo.html">Insumos</a></li>
+                    <li><a class="boton-Nuevo categoria" href="cateInsumo.html">Categoria</a></li>
 
-                    <li><button class="btn btn-success boton-cateinsumo" id="botonCategoriaInsumo" data-bs-toggle="modal" data-bs-target="#modalProducto">Nuevo Insumo</button></li>
+                    <li><button class="btn btn-success boton-cateinsumo" data-bs-toggle="modal" data-bs-target="#modalProducto">Nuevo Insumo</button></li>
                 </ul>
 
             </div>
@@ -75,7 +83,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalProductoLabel">Nuevo Insumo</h5>
+                    <h5 class="modal-title" id="modalProductoLabel">Nuevo Producto</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
