@@ -11,9 +11,9 @@ header.innerHTML = `
     <nav class="nav_header mt-4">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="ventas.html"><i class="bi bi-cart-fill me-2"></i><span class="">ventas</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-archive-fill me-2"></i><span>productos</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-box-fill me-2"></i><span>insumos</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-graph-up-arrow me-2"></i><span>reportes</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="producto.html"><i class="bi bi-archive-fill me-2"></i><span>productos</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="insumo.html"><i class="bi bi-box-fill me-2"></i><span>insumos</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="reporte.html"><i class="bi bi-graph-up-arrow me-2"></i><span>reportes</span></a></li>
         </ul>
     </nav>
 </div>
