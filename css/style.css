@@ -66,3 +66,10 @@ figure{
 .nav .nav-item .efecto:hover{
     color: #646464;
 }
+.overflow-auto {
+    overflow-y: auto; 
+}
+
+.container.overflow-auto {
+    max-height: 600px; 
+}

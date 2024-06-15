@@ -1,6 +1,27 @@
 const header = document.querySelector('header');
 const navVenta = document.querySelector('.navVenta');
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const acceptButton = document.querySelector('#acceptButton');
+    const modal = new bootstrap.Modal(document.querySelector('#exampleModal'));
+    const paymentForm = document.getElementById('paymentForm');
+
+    acceptButton.addEventListener('click', function() {  
+        if (paymentForm.checkValidity()) {
+            modal.hide(); 
+        } else {     
+            paymentForm.reportValidity(); 
+        }
+    });
+  
+    modal._element.addEventListener('hidden.bs.modal', function() {
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+            backdrop.parentNode.removeChild(backdrop);
+        }
+    });
+});
 header.innerHTML = `
 <div class="container_header">
 <div class="logo_menu">
@@ -13,7 +34,7 @@ header.innerHTML = `
             <li class="nav-item"><a class="nav-link" href="ventas.html"><i class="bi bi-cart-fill me-2"></i><span class="">ventas</span></a></li>
             <li class="nav-item"><a class="nav-link" href="producto.html"><i class="bi bi-archive-fill me-2"></i><span>productos</span></a></li>
             <li class="nav-item"><a class="nav-link" href="insumo.html"><i class="bi bi-box-fill me-2"></i><span>insumos</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="reporte.html"><i class="bi bi-graph-up-arrow me-2"></i><span>reportes</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="reportes.html"><i class="bi bi-graph-up-arrow me-2"></i><span>reportes</span></a></li>
         </ul>
     </nav>
 </div>
@@ -102,3 +123,4 @@ cardMesa.innerHTML += `
         </div>
     </div>
 `;
+
