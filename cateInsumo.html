@@ -3,79 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarpiShot</title>
+    <title>Categoria  Insumo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styleCategorias.css">
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="wrapper">
+    <header>
 
-        <aside>
+    </header>
 
-            <header>
-                <img class="imagen-logo" src="fogon.png">
-            </header>
-            <nav>
-                <ul class="menu">
-                    <li><a class="boton-menu boton-categoria" href="ventas.html"><i class="bi bi-cart-check-fill"></i> VENTAS</a></li>
-                    <li><a class="boton-menu boton-categoria" href="producto.html"><i class="bi bi-calendar-minus-fill"></i> PRODUCTOS</a></li>
-                    <li><a class="boton-menu boton-categoria active" href="insumo.html"><i class="bi bi-box"></i> INSUMOS</a></li>
-                    <li><a class="boton-menu boton-categoria" href="reporte.html"><i class="bi bi-bar-chart-line-fill"></i> REPORTES</a></li>
-                    
-                </ul>
-            </nav>
+    <main class="content-main">
 
-            <footer class="footer bg-gray-800 p-1.8 text-white" >
-                <ul class="list-none">
-                    <li>
-                        <button class="boton-menu flex items-center space-x-2">
-                            <i class="bi bi-person-check-fill"></i>
-                            <a href="login.html" class="text-dark">CUENTA</a>
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                    </li>
-                </ul>
-            </footer> 
+        <div class="container boton-categoria-insumo">
 
-        </aside>
-
-        <main>
-
-            <div class="boton-categoria-insumo">
-
-                <ul class="secciones">
+            <ul class="secciones d-flex justify-content-between my-3">
+                <div class="d-flex">
                     <li><a class="boton-Nuevo insumo"  href="./insumo.html">Insumos</a></li>
-                    <li><a class="boton-Nuevo categoria">Categoria</a></li>
+                    <li><a class="boton-Nuevo categoria" href="./cateInsumo.html" >Categoria</a></li>
+                </div>
+              
 
-                    <li><button class="btn btn-success boton-cateinsumo" data-bs-toggle="modal" data-bs-target="#modalProducto">Nueva Categoria</button></li>
-                </ul>
+                <li><button class="btn btn-success boton-cateinsumo" data-bs-toggle="modal" data-bs-target="#modalProducto">Nueva Categoria</button></li>
+            </ul>
 
-            </div>
+        </div>
 
-            <div class="container mt-5 contenedor-crud-insumo">
+        <div class="container contenedor-crud-insumo m-auto">
 
-                
-                <table id="tablaProductos" class="table mt-4">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>                            
-                            <th>Categoría</th>                  
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                    </tbody>
-                </table>
-            </div>
+            
+            <table  id="tablaProductos" class="table mt-4 ">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>                            
+                        <th>Categoría</th>                  
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
 
-        </main>
-    </div>
-
+    </main>
 
 
     <div id="modalProducto" class="modal fade" tabindex="-1" aria-labelledby="modalProductoLabel" aria-hidden="true">
@@ -125,7 +100,7 @@
 
 
     
-
+    <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/table2.js"></script>
 </body>

@@ -2,6 +2,8 @@ const header = document.querySelector('header');
 const navVenta = document.querySelector('.navVenta');
 
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const acceptButton = document.querySelector('#acceptButton');
     const modal = new bootstrap.Modal(document.querySelector('#exampleModal'));
@@ -22,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
 header.innerHTML = `
 <div class="container_header">
 <div class="logo_menu">

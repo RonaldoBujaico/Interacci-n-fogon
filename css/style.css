@@ -73,3 +73,50 @@ figure{
 .container.overflow-auto {
     max-height: 600px; 
 }
+
+.cursor{
+    cursor: pointer;
+}
+
+/* para el informe  */
+
+.container-reporte{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card .paragraph {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}

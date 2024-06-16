@@ -13,12 +13,7 @@
 
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'rubik', sans-serif;
-}
+
 
 h1,h2,h3,h4,h5,h6,p,a,input,textarea{
     margin: 0;
@@ -35,20 +30,21 @@ a{
 /* DISEÑO DEL LOGO*/
 
 .wrapper{
+   
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
 
 aside{
-    padding: 2rem;
-    padding-right: 1.5;
+    width: 210px;
     position: sticky;
     top: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+     align-items: center;
+    justify-content: center;
     border-right: 2px solid var(--clr-gray);
 }
 
@@ -79,8 +75,8 @@ aside{
 /* DISEÑO DEL MAIN*/
 
 main{
-   margin-left: 0;
-   padding:  1rem 0;
+   margin-left: 210px;
+   padding-top: .5rem;
    
 }
 
@@ -235,12 +231,9 @@ main{
     color: var(--clr-white);
     justify-content: space-between;
     margin-left: 550px; 
-    margin-bottom: 0.5rem;
-
-    font-size: 1.1rem;
     font-weight: 600;
-    padding:  1rem 2rem;
-    gap: 1rem;
+   
+  
 
     
 }
