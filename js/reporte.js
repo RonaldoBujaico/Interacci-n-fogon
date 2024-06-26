@@ -51,3 +51,61 @@ document.addEventListener('DOMContentLoaded', function() {
             .save();
     });
 });
+
+const tablaProducto = document.querySelector("#tabla-producto");
+
+const productos = [
+    {
+        "nombreProducto": "Chicano",
+        "cantidad": "",
+        "precio": 15.30
+    },
+    {
+        "nombreProducto": "Cola cola 1lt",
+        "cantidad": "",
+        "precio": 8.50
+    },
+    {
+        "nombreProducto": "Inka Cola 1lt",
+        "cantidad": "",
+        "precio": 9.50
+    },
+    {
+        "nombreProducto": "Anticucho",
+        "cantidad": "",
+        "precio": 18.00
+    },
+    {
+        "nombreProducto": "Mollejita",
+        "cantidad": "",
+        "precio": 12.50
+    },
+    {
+        "nombreProducto": "Brocheta de pollo",
+        "cantidad": "",
+        "precio": 15.00
+    },
+    {
+        "nombreProducto": "Rachi",
+        "cantidad": "",
+        "precio": 10.50
+    },
+];
+
+
+productos.forEach((producto) => {
+    tablaProducto.innerHTML += `
+    <tr >
+        <th><button class="btn btn-danger"><i class="bi bi-trash-fill"></i></button></th>
+        <td>${producto.nombreProducto}</td>
+        <td><button class="btn btn-secondary">+</button> 1 <button class="btn btn-secondary">-</button></td>
+        <td>${producto.precio}</td>
+        <td><button class="btn btn-warning"><i class="bi bi-pencil-fill"></i></button></td>
+    </tr>
+    `;
+
+})
+
+
+
+

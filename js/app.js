@@ -2,22 +2,37 @@ const header = document.querySelector('header');
 const navVenta = document.querySelector('.navVenta');
 
 
+const hamburguesa = document.querySelector('.navbar-toggler');
+
+const contenedorCrudInsumo = document.querySelector('.content-main');
+
+hamburguesa.addEventListener('click',()=>{
+    header.classList.toggle('show-header');
+    if (header.classList.contains('show-header')) {
+        contenedorCrudInsumo.style.width = '100%';
+        contenedorCrudInsumo.style.marginLeft = '0';
+    } else {
+        contenedorCrudInsumo.style.width = 'calc(100% - 210px)'; 
+        contenedorCrudInsumo.style.marginLeft = '210px'; 
+    }
+})
 
 
-document.addEventListener('DOMContentLoaded', function() {
+
+document.addEventListener('DOMContentLoaded', function () {
     const acceptButton = document.querySelector('#acceptButton');
     const modal = new bootstrap.Modal(document.querySelector('#exampleModal'));
     const paymentForm = document.getElementById('paymentForm');
 
-    acceptButton.addEventListener('click', function() {  
+    acceptButton.addEventListener('click', function () {
         if (paymentForm.checkValidity()) {
-            modal.hide(); 
-        } else {     
-            paymentForm.reportValidity(); 
+            modal.hide();
+        } else {
+            paymentForm.reportValidity();
         }
     });
-  
-    modal._element.addEventListener('hidden.bs.modal', function() {
+
+    modal._element.addEventListener('hidden.bs.modal', function () {
         const backdrop = document.querySelector('.modal-backdrop');
         if (backdrop) {
             backdrop.parentNode.removeChild(backdrop);
@@ -26,14 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 header.innerHTML = `
-<div class="container_header">
+
+<div class="container_header show-header">
+
 <div class="logo_menu">
     <figure class="figure">
         <img class="logo_figure" src="./img/logo.png" alt="logotipo del restaurane">
     </figure>
-    
-    <nav class="nav_header mt-4">
+
+    <nav class="nav_header" >
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="ventas.html"><i class="bi bi-cart-fill me-2"></i><span class="">ventas</span></a></li>
             <li class="nav-item"><a class="nav-link" href="producto.html"><i class="bi bi-archive-fill me-2"></i><span>productos</span></a></li>
@@ -41,15 +59,19 @@ header.innerHTML = `
             <li class="nav-item"><a class="nav-link" href="reportes.html"><i class="bi bi-graph-up-arrow me-2"></i><span>reportes</span></a></li>
         </ul>
     </nav>
+
+      <div class="btn-login">
+             <a  href="./login.html" type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"  data-bs-content="Right popover"><i class="bi bi-person-fill "></i>
+                 <span>cuenta</span> 
+                 </a>
+    </div>  
 </div>
 
-<div class="btn-login">
-    <a  href="./login.html" type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"  data-bs-content="Right popover"><i class="bi bi-person-fill "></i>
-        <span>cuenta</span> 
-    </a>
-</div>
 </div> 
 `;
+
+
+
 
 navVenta.innerHTML = `
 <div class="container-fluid separacion">
@@ -64,39 +86,42 @@ navVenta.innerHTML = `
 </div>
 `;
 
+
+
+
 const cardMesa = document.querySelector(".mesas");
 
 
 const datos = [
     {
-      "title": "Mesa 1",
-      "inicia": "2024-06-08T09:00:00",
-      "numero_de_persona": 4,
-      "precio": 50.30
+        "title": "Mesa 1",
+        "inicia": "2024-06-08T09:00:00",
+        "numero_de_persona": 4,
+        "precio": 50.30
     },
     {
-      "title": "Mesa 2",
-      "inicia": "2024-06-09T10:30:00",
-      "numero_de_persona": 6,
-      "precio": 60.50
+        "title": "Mesa 2",
+        "inicia": "2024-06-09T10:30:00",
+        "numero_de_persona": 6,
+        "precio": 60.50
     },
     {
-      "title": "Mesa 3",
-      "inicia": "2024-06-10T14:00:00",
-      "numero_de_persona": 2,
-      "precio": 40.40
+        "title": "Mesa 3",
+        "inicia": "2024-06-10T14:00:00",
+        "numero_de_persona": 2,
+        "precio": 40.40
     },
     {
-      "title": "Mesa 4",
-      "inicia": "2024-06-11T16:45:00",
-      "numero_de_persona": 3,
-      "precio": 35.23
+        "title": "Mesa 4",
+        "inicia": "2024-06-11T16:45:00",
+        "numero_de_persona": 3,
+        "precio": 35.23
     },
     {
-      "title": "Mesa 5",
-      "inicia": "2024-06-12T08:00:00",
-      "numero_de_persona": 8,
-      "precio": 75.12
+        "title": "Mesa 5",
+        "inicia": "2024-06-12T08:00:00",
+        "numero_de_persona": 8,
+        "precio": 75.12
     }
 ];
 
@@ -127,4 +152,8 @@ cardMesa.innerHTML += `
         </div>
     </div>
 `;
+
+
+
+
 

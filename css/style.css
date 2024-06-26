@@ -1,21 +1,22 @@
-body, html{
+body,
+html {
     height: 100%;
     margin: 0;
 }
 
-header{
+header {
     height: 100%;
     width: 210px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    border-right: 1px solid #eee ;
+    border-right: 1px solid #eee;
     overflow: hidden;
-    
+
 }
 
-.container_header{
+.container_header {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -25,62 +26,64 @@ header{
 }
 
 
-.logo_menu{
+.logo_menu {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 }
 
 
 
 
-figure{
+figure {
     width: 75%;
 }
 
-.logo_figure{
+.logo_figure {
     width: 100%;
 }
 
-.nav-link span{
+.nav-link span {
     font-size: 18px;
 }
 
-.content-main{
-    
+.content-main {
+
     margin-left: 210px;
     font-size: 22px;
-    
+
 }
-.separacion{
-    
+
+.separacion {
+
     border-bottom: 2px solid #eee;
 }
 
 
-.nav .nav-item .efecto{
+.nav .nav-item .efecto {
     color: #000;
 }
 
 
-.nav .nav-item .efecto:hover{
+.nav .nav-item .efecto:hover {
     color: #646464;
 }
+
 .overflow-auto {
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 .container.overflow-auto {
-    max-height: 600px; 
+    max-height: 600px;
 }
 
-.cursor{
+.cursor {
     cursor: pointer;
 }
 
 /* para el informe  */
 
-.container-reporte{
+.container-reporte {
     max-width: 800px;
     margin: 20px auto;
     background-color: #fff;
@@ -119,4 +122,85 @@ figure{
     font-size: 24px;
     font-weight: bold;
     color: #007bff;
+}
+.navbar-toggler{
+    display: none;
+}
+
+/* resposive  */
+@media screen and (max-width: 450px) {
+   
+    .navbar-toggler{
+        font-size: 55px;
+        display: block;
+    }
+
+
+    .show-header{
+        left: -300px;
+        transition: .3s all;
+    }
+
+    header {
+        
+        height: 100%;
+        width: 150px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0px;
+        transition: .3s all;
+        /* background-color: #ffffff; */
+        border-right: 3px solid #eee;
+        overflow: hidden;
+    }
+
+    
+    .content-main {
+
+        margin-left: 150px;
+        font-size: 22px;
+
+    }
+
+    .container_header {
+        
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav-item span {
+        font-size: 18px;
+    }
+
+    .nav-item .bi-cart-fill,
+    .nav-item .bi-archive-fill,
+    .nav-item .bi-box-fill,
+    .nav-item .bi-graph-up-arrow {
+        font-size: 12px;
+    }
+
+    .figure {
+        width: 75%;
+        margin-bottom: 25px;
+    }
+
+    .logo_figure {
+        width: 100%;
+    }
+
+    .btn-login {
+        margin-top: 25px;
+    }
+    
+    .container.contenedor-crud-insumo {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-left: 0; /* Asegura que no haya margen izquierdo */
+        overflow-y: auto; /* Agrega scroll vertical si es necesario */
+        max-height: calc(100vh - 100px); /* Altura máxima, ajusta según tu diseño */
+    }
 }
