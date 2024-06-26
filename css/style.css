@@ -123,14 +123,14 @@ figure {
     font-weight: bold;
     color: #007bff;
 }
-.navbar-toggler{
+.content-main .navbar-toggler{
     display: none;
 }
 
 /* resposive  */
 @media screen and (max-width: 450px) {
    
-    .navbar-toggler{
+     .navbar-toggler{
         font-size: 55px;
         display: block;
     }
