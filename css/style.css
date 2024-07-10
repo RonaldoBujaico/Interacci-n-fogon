@@ -130,8 +130,8 @@ figure {
 /* resposive  */
 @media screen and (max-width: 450px) {
    
-     .navbar-toggler{
-        font-size: 55px;
+    .content-main .navbar-toggler{
+        font-size: 40px;
         display: block;
     }
 
